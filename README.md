@@ -5,4 +5,4 @@ This is a mini Javascript Project that involves three step-down menu with each m
 At the moment, it is a self exercise. Check back in a week.
 
 ## License 
-N/A
+[MIT](https://choosealicense.com/licenses/mit/)
