@@ -1,4 +1,4 @@
-makeCoffee(2,10);
+
 function makeCoffee (sugar, milk)
 {
     var instructions ="Boil water,";
@@ -8,3 +8,5 @@ function makeCoffee (sugar, milk)
     instrcutions += "add" + milk + "% milk";
     return instructions;
 }
+
+console.log(makeCoffee(2,10))
