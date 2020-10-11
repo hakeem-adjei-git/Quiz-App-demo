@@ -1,11 +1,22 @@
-var pHello = document.getElementsByClassName('pClass');
+let elements= 
+document.querySelector('[name="cssProperty"]');
+
+let div = document.querySelector('#modify');
+
+function set()
+{
+
+    for (let index = 0; index < elements.length; index++)
+    {
+    let cssProperty = elements[index].getAttribute('id');
+
+    let cssValue = elements[index].value;
+
+   
     
-pHello.innerText = "new world";
+    div.style[cssProperty] = cssValue;
 
-pHello.innerHTML += " order <span>hello world</span>";
-
-pHello.outerHTML = '<h2 id="hello">new world order <span>hello world</span></h2>';
-
-var spanH1 = document.querySelectorAll('p span');
-
-spanH1[0].innerHTML = "new text here!!";
+    }
+   
+}
+document.querySelector('#set').addEventListener('click',set);
